@@ -1,6 +1,6 @@
-# Desktop bridges for quickjs
+# bridges for quickjs
 
-Generates shared binaries libraries to be consumed by flutter_js on desktop platforms.
+Generates shared binaries libraries to be consumed by flutter_js on desktop platforms and OpenHarmony.
 
 ## Windows
 
@@ -53,6 +53,20 @@ now build the library executing the command bellow:
 ```bash
 cmake --build build/linux
 ```
+
+## OpenHarmony
+
+config `OHOS_TOOLCHAIN` in `build-ohos.sh` to point to the toolchain directory.
+
+At the project root directory, run:
+
+```shell
+chmod +x ./build-ohos.sh
+./build-ohos.sh
+```
+
+more about `OHOS_TOOLCHAIN` please refer to OpenHarmony/HarmonyOS NDK documentation.
+
 ## Windows References
 
 * Build to Windows using CMake and Ninja Generator: https://dmerej.info/blog/post/cmake-visual-studio-and-the-command-line/
