@@ -53,6 +53,21 @@ now build the library executing the command bellow:
 ```bash
 cmake --build build/linux
 ```
+
+## OpenHarmony
+
+At the project root directory, run:
+
+```bash
+cmake -S ./ohos -B ./build/ohos -DOHOS_STL=c++_static -DOHOS_ARCH=arm64-v8a -DOHOS_PLATFORM=OHOS -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=/path/to/native/build/cmake/ohos.toolchain.cmake
+```
+
+now build the library executing the command bellow:
+
+```bash
+cmake --build build/ohos
+```
+
 ## Windows References
 
 * Build to Windows using CMake and Ninja Generator: https://dmerej.info/blog/post/cmake-visual-studio-and-the-command-line/
